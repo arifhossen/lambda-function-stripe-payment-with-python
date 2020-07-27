@@ -167,7 +167,7 @@ def card_payment(data):
     "amount": "7800",
     "currency": "usd",
     "tok_card": "tok_1Gla13EmyhTFDlRB69NJjeYd",
-    "description": "KhaoDao Payment From Moby Dick Restaurant",
+    "description": "Transaction information",
     "cardholder_name": "Arif Hossen",
     "order_id": "1002"
 }
