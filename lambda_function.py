@@ -8,7 +8,7 @@ def lambda_handler(event, context):
     resource = event.get("resource")
     method = event.get("httpMethod")
 
-    if resource == '/payment/stripe/gettoken':
+    if resource == '/stripe/gettoken':
         if method == 'POST':
             event_body = event.get("body")
             json_data = json.loads(event_body)
@@ -18,7 +18,7 @@ def lambda_handler(event, context):
             data = {"message": "Method Not Allowed"}
             result = {'statusCode': 405, 'body': json.dumps(data)}
 
-    elif resource == '/payment/stripe/cardpayment':
+    elif resource == '/stripe/cardpayment':
         if method == 'POST':
             event_body = event.get("body")
             json_data = json.loads(event_body)
